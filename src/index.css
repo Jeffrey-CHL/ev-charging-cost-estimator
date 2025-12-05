@@ -1,13 +1,13 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+/* 设置全局 box-sizing，避免 padding 影响布局计算 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 去掉 body 默认 margin，并设置背景色 */
+body {
+  margin: 0;
+  background-color: #f4f6fb;
 }
