@@ -1,46 +1,187 @@
-# Getting Started with Create React App
+# EV Charging Cost Estimator ⚡️🔋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and user-friendly React + TypeScript application that estimates
+EV charging costs based on battery size, electricity pricing, charging
+percentage, and real-time currency exchange rates.
 
-## Available Scripts
+Live site: *Add your Netlify URL here*\
+GitHub repository: *Add your repo link here*
 
-In the project directory, you can run:
+------------------------------------------------------------------------
 
-### `npm start`
+## 📌 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Electric vehicle owners often want a quick way to estimate how much it
+will cost to charge their car from a given state-of-charge (SoC) to a
+target SoC.\
+This tool provides:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   Estimated **energy needed (kWh)**
+-   Charging cost in **USD**
+-   Charging cost converted into **multiple currencies**
+-   Real-time exchange rates from a **free API (open.er-api.com)**
 
-### `npm test`
+The app is simple, fast, and accessible --- built as a small but
+complete example of a real-world React + TypeScript web application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+------------------------------------------------------------------------
 
-### `npm run build`
+## 📝 PRD --- Product Requirement Document (Light Version)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **1. Problem Statement**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+EV drivers often need a quick estimation of charging costs based on
+their battery capacity, local electricity price, and how much they plan
+to charge.\
+Existing tools are either too complex, require logins, or do not support
+multi-currency results.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **2. Goal**
 
-### `npm run eject`
+Provide a lightweight, easy-to-use web tool that calculates:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   Energy needed to charge from point A to B\
+-   Charging cost in USD\
+-   Charging cost converted into other major currencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **3. Target Users**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-   EV owners\
+-   Potential EV buyers\
+-   Students learning about energy consumption\
+-   Anyone comparing charging costs across countries
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### **4. User Value**
 
-## Learn More
+Users can instantly know:\
+\> "How much will it cost to charge my EV from X% to Y%, using my
+electricity rate, in my preferred currency?"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **5. Functional Requirements**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   User inputs battery capacity, start/end SOC, electricity rate,
+    target currency\
+-   Output includes required kWh, USD cost, exchange rate, and converted
+    cost\
+-   Fetch live exchange rates from open.er-api.com\
+-   Validate all inputs
+
+### **6. Technical Requirements**
+
+-   React + TypeScript\
+-   Semantic HTML\
+-   Accessible CSS\
+-   Hosted on Netlify\
+-   Code on GitHub
+
+------------------------------------------------------------------------
+
+## 🛠️ Technology Stack
+
+-   **React 18**
+-   **TypeScript**
+-   **CSS**
+-   **open.er-api.com API**
+-   **Netlify**
+-   **GitHub**
+
+------------------------------------------------------------------------
+
+## ⚙️ How It Works
+
+1.  User fills out the form.\
+2.  App computes required energy and USD cost.\
+3.  Fetches live exchange rate from API.\
+4.  Converts USD → target currency.\
+5.  Displays final results.
+
+------------------------------------------------------------------------
+
+## 🚀 Getting Started
+
+### Clone repo
+
+``` bash
+git clone https://github.com/Jeffrey-CHL/ev-charging-cost-estimator.git
+cd ev-charging-cost-estimator
+```
+
+### Install dependencies
+
+``` bash
+npm install
+```
+
+### Run locally
+
+``` bash
+npm start
+```
+
+------------------------------------------------------------------------
+
+## 🌐 Deployment (Netlify)
+
+1.  Add new site → Import Git repository\
+2.  Build command:
+
+```{=html}
+<!-- -->
+```
+    npm run build
+
+3.  Publish directory:
+
+```{=html}
+<!-- -->
+```
+    build
+
+4.  Deploy\
+5.  Netlify automatically redeploys on each git push
+
+------------------------------------------------------------------------
+
+## 🔗 API Used
+
+Free, no-key API:
+
+    GET https://open.er-api.com/v6/latest/USD
+
+------------------------------------------------------------------------
+
+## 📁 Project Structure
+
+    ev-charging-cost-estimator/
+    ├── public/
+    ├── src/
+    │   ├── App.tsx
+    │   ├── App.css
+    │   ├── index.tsx
+    │
+    ├── package.json
+    ├── tsconfig.json
+    └── README.md
+
+------------------------------------------------------------------------
+
+## 🧪 How to Use
+
+1.  Enter battery capacity\
+2.  Enter start/end SOC\
+3.  Enter electricity price\
+4.  Select currency\
+5.  Click "Estimate Charging Cost"\
+6.  View results
+
+------------------------------------------------------------------------
+
+## ✨ Author
+
+Built by **Hanlin (Jeffrey) Cheng**, Northeastern University.
+
+------------------------------------------------------------------------
+
+## 📝 License
+
+MIT License
