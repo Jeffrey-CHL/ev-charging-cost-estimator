@@ -26,7 +26,7 @@ complete example of a real-world React + TypeScript web application.
 
 ------------------------------------------------------------------------
 
-## 📝 PRD --- Product Requirement Document (Light Version)
+## 📝 PRD --- Product Requirement Document
 
 ### **1. Problem Statement**
 
