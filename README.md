@@ -4,8 +4,8 @@ A simple and user-friendly React + TypeScript application that estimates
 EV charging costs based on battery size, electricity pricing, charging
 percentage, and real-time currency exchange rates.
 
-Live site: *Add your Netlify URL here*\
-GitHub repository: *Add your repo link here*
+Live site: https://ev-charging-cost-estimator.netlify.app
+GitHub repository: https://github.com/Jeffrey-CHL/ev-charging-cost-estimator
 
 ------------------------------------------------------------------------
 
